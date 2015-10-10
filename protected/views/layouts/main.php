@@ -32,7 +32,6 @@
 				array('label'=>'NOTINACIONAL', 'url'=>array('/site/index')),
 				array('label'=>'INICIO DE SESION', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'CERRAR SESION ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'REGISTRO', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'LISTADO DE EMPLEADOS', 'url'=>array('/empleado/index'))
 			),
 		)); ?>
