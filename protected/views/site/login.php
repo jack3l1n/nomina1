@@ -3,9 +3,9 @@
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
 
-$this->pageTitle = Yii::app()->name . ' - Login';
+$this->pageTitle = Yii::app()->name . ' - Iniciar sesión';
 $this->breadcrumbs = array(
-    'Login',
+    'Iniciar sesión',
 );
 ?>
 <div class="parent">
@@ -22,25 +22,26 @@ $this->breadcrumbs = array(
             ?>
 
             <div class="row">
-                <?php echo $form->labelEx($model, 'username'); ?>
-                <?php echo $form->textField($model, 'username'); ?>
-                <?php echo $form->error($model, 'username'); ?>
+                <?php echo $form->labelEx($model, 'Usuario'); ?>
+                <?php echo $form->textField($model, 'Usuario'); ?>
+                <?php echo $form->error($model, 'Usuario'); ?>
             </div>
 
             <div class="row">
-                <?php echo $form->labelEx($model, 'password'); ?>
-                <?php echo $form->passwordField($model, 'password'); ?>
-                <?php echo $form->error($model, 'password'); ?>
+                <?php echo $form->labelEx($model, 'Clave'); ?>
+                <?php echo $form->passwordField($model, 'Clave'); ?>
+                <?php echo $form->error($model, 'Clave'); ?>
             </div>
 
             <div class="row rememberMe">
                 <?php echo $form->checkBox($model, 'rememberMe'); ?>
                 <?php echo $form->label($model, 'rememberMe'); ?>
                 <?php echo $form->error($model, 'rememberMe'); ?>
+
             </div>
 
             <div class="row buttons">
-                <?php echo CHtml::submitButton('Login'); ?>
+                <?php echo CHtml::submitButton('Iniciar sesión'); ?>
             </div>
 
             <?php $this->endWidget(); ?>

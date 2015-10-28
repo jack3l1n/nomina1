@@ -25,13 +25,30 @@ $this->pageTitle = Yii::app()->name;
             <td>
                 <table title="Menu" border="0" width="100px">
                     <tr><td>Cumpleaños del Mes de Octubre</td></tr>
-
+                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/feliz-cumpleanos.gif" style="margin: 15px 0 "width="200" height="200"/>
+                    Hoy les queremos desea un feliz dia que sea lleno de grandes sorpresas, 
+                    felicidad, y de la compañia de sus seres queridos.
+                    <td>Nancy Mendez</td>
+                    <td>William Martinez</td>
+                    <td>Dora Gomez</td>
                 </table>
             </td>
+
             <td>
                 <table title="Contenido" border="0" width="400px">
                     <tr>
-                        <td>Acá va el contenido</td>
+                        <!--<td></td>-->
+
+                    <img src="http://www.nalelectricos.com.co/wp-content/uploads/2015/02/logo_nacional2.png" style="margin: 15px 0">
+                    <h3><center>Certificados de Calidad</center></h3>
+                    Es grato para Nacional de Eléctricos informarles a todos nuestros clientes y proveedores sobre la renovación de la certificación del sistema de Gestión de Calidad, 
+                    bajo la norma ISO 9001 versión 2008, obtenida en el mes de Marzo de 2014 y avalada por la compañía SGS, este logro busca brindar un mayor respaldo y confianza a las necesidades de nuestros clientes 
+                    basado en la mejora continua de nuestros procesos.<br>
+
+                    Igualmente les recordamos que estamos certificados en nuestras líneas de productos con la norma RETIE.
+
+                    Línea de producto: Canaleta Metálica, Ducto Metálico
+                    Línea de producto: Cajas Conduit, Cajas de Paso (de línea y especiales), Cajas para Breaker y Gabinetes1
                     </tr>
                 </table>
             </td>

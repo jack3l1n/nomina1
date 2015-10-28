@@ -1,23 +1,29 @@
 #vista1{
-    background-image: url("../imagenes/1.jpg");
+    background-image: url("");
     background-size: 100% auto;
 }
 .parent{
-   background-image: url("http://img02.deviantart.net/c610/i/2013/266/a/0/wild_girl_by_shawna_mac_by_shawnamac-d6njfzl.jpg");
-     background-size: auto 100%;
+    background-image: url("imagen2.jpg");
+    background-size: auto 100%;
+    position: relative;
+    width: 900px;
+    height: 900px;
 }
 
 .test{
-    position: relative;
-    margin: 0 auto;
+    /*position: relative;*/
+    position: absolute;
+    /*margin: 0 auto;*/
     width: 400px;
     height: 300px;
+    left: 250px;
+    top: 300px;
     background-color: black;
     background: rgba(7, 7, 7, 0.4);
 }
 
 .test > *{
-    color: #09f;
+    color: #010101;
     text-align: center;
     font-size: 18px;
 }

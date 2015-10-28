@@ -24,10 +24,10 @@
         <div class="container" id="page">
 
             <div id="header">
-                <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+              <div id="logo"><?php // echo CHtml::encode(Yii::app()->name); ?>
             </div><!-- header -->
 
-            <div id="mainmenu">
+            <div id="mainmenu" class="menu">
                 <?php
                 $this->widget('zii.widgets.CMenu', array(
                     'items' => array(
