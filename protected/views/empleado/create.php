@@ -9,14 +9,14 @@ $this->breadcrumbs = array(
 
 $this->menu = array(
     array('label' => 'List Empleado', 'url' => array('index')),
-    array('label' => 'Manage Empleado', 'url' => array('admin')),
+    array('label' => 'ADMINISTRACION DE EMPLEADO', 'url' => array('admin')),
 );
 ?>
 
 
 <h1>REGISTRO DE EMPLEADO</h1>
 
-<form action="script.php" method="post">
+<!--<form action="script.php" method="post">
     Nivel de Estudio:<br/>
     <select name="NIVEL DE ESTUDIO"> 
         <option value="---" selected="selected">---</option>
@@ -27,7 +27,7 @@ $this->menu = array(
         <option value="UNIVERSITARIO" selected="selected">UNIVERSITARIO</option>
         <option value="PROFESIONAL" selected="selected">PROFESIONAL</option>
     </select>
-</form>
+</form>-->
 
 
 <?php $this->renderPartial('_form', array('model' => $model)); ?>

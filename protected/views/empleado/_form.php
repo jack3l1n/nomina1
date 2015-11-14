@@ -17,15 +17,15 @@
     ));
 
 
-    $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-        'name' => 'publishDate',
-        'options' => array(
-            'showAnim' => 'fold',
-        ),
-        'htmlOptions' => array(
-            'style' => 'height:20px;'
-        ),
-    ));
+    /* $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+      'name' => 'publishDate',
+      'options' => array(
+      'showAnim' => 'fold',
+      ),
+      'htmlOptions' => array(
+      'style' => 'height:20px;'
+      ),
+      )); */
     ?>
 
 
@@ -108,21 +108,6 @@
         <?php echo $form->error($model, 'fecha_nacimiento'); ?>
     </div>
 
-
-
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'eps'); ?>
-        <?php echo $form->textField($model, 'eps', array('size' => 45, 'maxlength' => 45)); ?>
-        <?php echo $form->error($model, 'eps'); ?>
-    </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'rh'); ?>
-        <?php echo $form->dropDownlist($model, 'rh', array('a+' => 'a+', 'a-' => 'a-', 'o+' => 'o+')); ?>
-        <?php echo $form->error($model, 'rh'); ?>
-    </div>
-
     <div class="row">
         <?php echo $form->labelEx($model, 'cargo'); ?>
         <?php echo $form->textField($model, 'cargo', array('size' => 45, 'maxlength' => 45)); ?>
@@ -139,13 +124,6 @@
         ?>
         <?php echo $form->error($model, 'sucursal'); ?>
     </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'jefe_inmediato'); ?>
-        <?php echo $form->textField($model, 'jefe_inmediato', array('size' => 45, 'maxlength' => 45)); ?>
-        <?php echo $form->error($model, 'jefe_inmediato'); ?>
-    </div>
-
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
     </div>

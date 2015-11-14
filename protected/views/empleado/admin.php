@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Empleado', 'url'=>array('index')),
-	array('label'=>'Create Empleado', 'url'=>array('create')),
+	array('label'=>'REGISTRO EMPLEADO NUEVO', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

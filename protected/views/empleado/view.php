@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Empleado', 'url'=>array('index')),
-	array('label'=>'Create Empleado', 'url'=>array('create')),
+	array('label'=>' REGISTRO EMPLEADO NUEVO', 'url'=>array('create')),
 	array('label'=>'Update Empleado', 'url'=>array('update', 'id'=>$model->cedula)),
 	array('label'=>'Delete Empleado', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Empleado', 'url'=>array('admin')),
+	array('label'=>'ADMINISTRACION DE EMPLEADO', 'url'=>array('admin')),
 );
 ?>
 
@@ -29,10 +29,7 @@ $this->menu=array(
 		'telefono',
 		'celular',
 		'fecha_nacimiento',
-		'eps',
-		'rh',
 		'cargo',
 		'sucursal',
-		'jefe_inmediato',
 	),
 )); ?>

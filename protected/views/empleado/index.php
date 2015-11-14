@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Empleado', 'url'=>array('create')),
-	array('label'=>'Manage Empleado', 'url'=>array('admin')),
+	array('label'=>'REGISTRO EMPLEADO NUEVO', 'url'=>array('create')),
+	array('label'=>'ADMINISTRACION DE EMPLEADO', 'url'=>array('admin')),
 );
 ?>
 
