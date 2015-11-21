@@ -963,3 +963,334 @@ Stack trace:
 REQUEST_URI=/nomina1/index.php?r=empleado/create
 HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
 ---
+2015/11/16 23:50:38 [error] [exception.CException] exception 'CException' with message 'La propiedad "Empleado"."eps" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('eps')
+#1 C:\xampp\htdocs\nomina1\protected\models\Empleado.php(114): CActiveRecord->__get('eps')
+#2 C:\xampp\htdocs\nomina1\protected\views\empleado\admin.php(45): Empleado->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\nomina1\protected\controllers\EmpleadoController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): EmpleadoController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/admin
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:07:56 [error] [exception.CException] exception 'CException' with message 'La propiedad "Empleado"."imagen" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('imagen')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('imagen')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Empleado), 'imagen')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Empleado), 'imagen', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Empleado), 'imagen', Array)
+#5 C:\xampp\htdocs\nomina1\protected\views\empleado\_search.php(65): CActiveForm->textField(Object(Empleado), 'imagen')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\nomina1\protected\views\empleado\admin.php(41): CController->renderPartial('_search', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\xampp\htdocs\nomina1\protected\controllers\EmpleadoController.php(143): CController->render('admin', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): EmpleadoController->actionAdmin()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/admin')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/admin
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:08:06 [error] [exception.CException] exception 'CException' with message 'La propiedad "Empleado"."imagen" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('imagen')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('imagen')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Empleado), 'imagen')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Empleado), 'imagen', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Empleado), 'imagen', Array)
+#5 C:\xampp\htdocs\nomina1\protected\views\empleado\_form.php(118): CActiveForm->textField(Object(Empleado), 'imagen', Array)
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\nomina1\protected\views\empleado\create.php(33): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\nomina1\protected\controllers\EmpleadoController.php(79): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): EmpleadoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/create')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/create
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:08:12 [error] [exception.CException] exception 'CException' with message 'La propiedad "Empleado"."imagen" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('imagen')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('imagen')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Empleado), 'imagen')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Empleado), 'imagen', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Empleado), 'imagen', Array)
+#5 C:\xampp\htdocs\nomina1\protected\views\empleado\_search.php(65): CActiveForm->textField(Object(Empleado), 'imagen')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\nomina1\protected\views\empleado\admin.php(41): CController->renderPartial('_search', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\xampp\htdocs\nomina1\protected\controllers\EmpleadoController.php(143): CController->render('admin', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): EmpleadoController->actionAdmin()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/admin')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/admin
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "models" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('models')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('models')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/models')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/models
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:52:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "models" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('models')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('models')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/models')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/models
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "models" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('models')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('models')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/models')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/models
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "models" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('models')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('models')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/models')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/models
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "models" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('models')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('models')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/models')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/models
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/index
+---
+2015/11/17 00:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "contact.php" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('contact.php')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('contact.php')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact.ph...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=site/contact.php
+HTTP_REFERER=http://localhost/nomina1/index.php?r=empleado/admin
+---
+2015/11/17 00:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "site" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('site')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('site')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/site')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=site/site
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---
+2015/11/17 01:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "controller" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('controller')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('controller')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/contro...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/controller
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---
+2015/11/17 01:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "controller" solicitada.' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('controller')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('controller')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('empleado/contro...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nomina1/index.php?r=empleado/controller
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---
+2015/11/17 01:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "pages/controller"' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pages/controlle...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nomina1/index.php?r=pages/controller
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---
+2015/11/17 03:34:59 [error] [php] array_slice() expects parameter 1 to be array, string given (C:\xampp\htdocs\yii\framework\base\CModel.php:287)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModel.php(547): ContactForm->getValidators()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(567): ContactForm->getSafeAttributeNames()
+#2 C:\xampp\htdocs\nomina1\protected\views\site\contact.php(38): CActiveForm->errorSummary()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#7 C:\xampp\htdocs\nomina1\protected\controllers\SiteController.php(72): SiteController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\nomina1\index.php(13): CWebApplication->run()
+REQUEST_URI=/nomina1/index.php?r=site/contact
+in C:\xampp\htdocs\nomina1\protected\views\site\contact.php (38)
+in C:\xampp\htdocs\nomina1\protected\controllers\SiteController.php (72)
+in C:\xampp\htdocs\nomina1\index.php (13)
+2015/11/17 03:43:52 [error] [exception.CException] exception 'CException' with message 'La propiedad "ContactForm"."Código de Verificación" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('C\xC3\xB3digo de Veri...')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(ContactForm), 'C\xC3\xB3digo de Veri...')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(ContactForm), 'C\xC3\xB3digo de Veri...', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(ContactForm), 'C\xC3\xB3digo de Veri...', Array)
+#4 C:\xampp\htdocs\nomina1\protected\views\site\contact.php(69): CActiveForm->textField(Object(ContactForm), 'C\xC3\xB3digo de Veri...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#9 C:\xampp\htdocs\nomina1\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/nomina1/index.php?r=site/contact
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---
+2015/11/17 03:44:03 [error] [exception.CException] exception 'CException' with message 'La propiedad "ContactForm"."Código de Verificación" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('C\xC3\xB3digo de Veri...')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(ContactForm), 'C\xC3\xB3digo de Veri...')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(ContactForm), 'C\xC3\xB3digo de Veri...', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(ContactForm), 'C\xC3\xB3digo de Veri...', Array)
+#4 C:\xampp\htdocs\nomina1\protected\views\site\contact.php(69): CActiveForm->textField(Object(ContactForm), 'C\xC3\xB3digo de Veri...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#9 C:\xampp\htdocs\nomina1\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/nomina1/index.php?r=site/contact
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---
+2015/11/17 03:44:18 [error] [exception.CException] exception 'CException' with message 'La propiedad "ContactForm"."Código de Verificación" no se encuentra definida.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('C\xC3\xB3digo de Veri...')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(ContactForm), 'C\xC3\xB3digo de Veri...')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(ContactForm), 'C\xC3\xB3digo de Veri...', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(ContactForm), 'C\xC3\xB3digo de Veri...', Array)
+#4 C:\xampp\htdocs\nomina1\protected\views\site\contact.php(69): CActiveForm->textField(Object(ContactForm), 'C\xC3\xB3digo de Veri...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#9 C:\xampp\htdocs\nomina1\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\nomina1\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/nomina1/index.php?r=site/contact
+HTTP_REFERER=http://localhost/nomina1/index.php?r=site/index
+---

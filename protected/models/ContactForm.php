@@ -7,10 +7,10 @@
  */
 class ContactForm extends CFormModel
 {
-	public $name;
-	public $email;
-	public $subject;
-	public $body;
+	public $Nombre;
+	public $Email;
+	public $Asunto;
+	public $Mensaje;
 	public $verifyCode;
 
 	/**
@@ -36,7 +36,7 @@ class ContactForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'verifyCode'=>'Verification Code',
+			'verifyCode'=>'Código de Verificación',
 		);
 	}
 }

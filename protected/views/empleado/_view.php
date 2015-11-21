@@ -17,33 +17,33 @@
 	<?php echo CHtml::encode($data->apellido); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('direccion')); ?>:</b>
-	<?php echo CHtml::encode($data->direccion); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('edad')); ?>:</b>
+	<?php echo CHtml::encode($data->edad); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
-	<?php echo CHtml::encode($data->email); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha_nacimiento')); ?>:</b>
+	<?php echo CHtml::encode($data->fecha_nacimiento); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('direccion')); ?>:</b>
+	<?php echo CHtml::encode($data->direccion); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('telefono')); ?>:</b>
 	<?php echo CHtml::encode($data->telefono); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('celular')); ?>:</b>
 	<?php echo CHtml::encode($data->celular); ?>
 	<br />
 
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha_nacimiento')); ?>:</b>
-	<?php echo CHtml::encode($data->fecha_nacimiento); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
+	<?php echo CHtml::encode($data->email); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('eps')); ?>:</b>
-	<?php echo CHtml::encode($data->eps); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('rh')); ?>:</b>
-	<?php echo CHtml::encode($data->rh); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Imagen')); ?>:</b>
+	<?php echo CHtml::encode($data->Imagen); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('cargo')); ?>:</b>
@@ -52,10 +52,6 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('sucursal')); ?>:</b>
 	<?php echo CHtml::encode($data->sucursal); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('jefe_inmediato')); ?>:</b>
-	<?php echo CHtml::encode($data->jefe_inmediato); ?>
 	<br />
 
 	*/ ?>

@@ -7,16 +7,15 @@
  * @property string $cedula
  * @property string $nombre
  * @property string $apellido
+ * @property integer $edad
+ * @property string $fecha_nacimiento
  * @property string $direccion
- * @property string $email
  * @property integer $telefono
  * @property integer $celular
- * @property string $fecha_nacimiento
- * @property string $eps
- * @property string $rh
+ * @property string $email
+ * @property string $Imagen
  * @property string $cargo
  * @property string $sucursal
- * @property string $jefe_inmediato
  *
  * The followings are the available model relations:
  * @property InformacionEmpleado[] $informacionEmpleados
@@ -39,15 +38,14 @@ class Empleado extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cedula', 'required'),
-			array('telefono, celular', 'numerical', 'integerOnly'=>true),
+			array('cedula, edad, fotoprincipal', 'required'),
+			array('edad, telefono, celular', 'numerical', 'integerOnly'=>true),
 			array('cedula', 'length', 'max'=>50),
-			array('nombre, apellido, direccion, email, eps, cargo, sucursal, jefe_inmediato', 'length', 'max'=>45),
-			array('rh', 'length', 'max'=>6),
-			array('fecha_nacimiento', 'safe'),
+			array('nombre, apellido, direccion, email, cargo, sucursal', 'length', 'max'=>45),
+			array('fecha_nacimiento', 'length', 'max'=>40),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cedula, nombre, apellido, direccion, email, telefono, celular, fecha_nacimiento, eps, rh, cargo, sucursal, jefe_inmediato', 'safe', 'on'=>'search'),
+			array('cedula, nombre, apellido, edad, fecha_nacimiento, direccion, telefono, celular, email, fotoprincipal, cargo, sucursal', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -72,16 +70,15 @@ class Empleado extends CActiveRecord
 			'cedula' => 'Cedula',
 			'nombre' => 'Nombre',
 			'apellido' => 'Apellido',
+			'edad' => 'Edad',
+			'fecha_nacimiento' => 'Fecha Nacimiento',
 			'direccion' => 'Direccion',
-			'email' => 'Email',
 			'telefono' => 'Telefono',
 			'celular' => 'Celular',
-			'fecha_nacimiento' => 'Fecha Nacimiento',
-			'eps' => 'Eps',
-			'rh' => 'Rh',
+			'email' => 'Email',
+			'fotoprincipal' => 'Fotoprincipal',
 			'cargo' => 'Cargo',
 			'sucursal' => 'Sucursal',
-			'jefe_inmediato' => 'Jefe Inmediato',
 		);
 	}
 
@@ -106,16 +103,15 @@ class Empleado extends CActiveRecord
 		$criteria->compare('cedula',$this->cedula,true);
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('apellido',$this->apellido,true);
+		$criteria->compare('edad',$this->edad);
+		$criteria->compare('fecha_nacimiento',$this->fecha_nacimiento,true);
 		$criteria->compare('direccion',$this->direccion,true);
-		$criteria->compare('email',$this->email,true);
 		$criteria->compare('telefono',$this->telefono);
 		$criteria->compare('celular',$this->celular);
-		$criteria->compare('fecha_nacimiento',$this->fecha_nacimiento,true);
-		$criteria->compare('eps',$this->eps,true);
-		$criteria->compare('rh',$this->rh,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('Fotoprincipal',$this->Fotoprincipal,true);
 		$criteria->compare('cargo',$this->cargo,true);
 		$criteria->compare('sucursal',$this->sucursal,true);
-		$criteria->compare('jefe_inmediato',$this->jefe_inmediato,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Contact Us</h1>
+<h1>SUGERENCIAS</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
 <?php else: ?>
 
 <p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+Si tienes alguna duda o sugerencia comunicate con nosotros. 
 </p>
 
 <div class="form">
@@ -38,27 +38,27 @@ If you have business inquiries or other questions, please fill out the following
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name'); ?>
-		<?php echo $form->error($model,'name'); ?>
+		<?php echo $form->labelEx($model,'Nombre'); ?>
+		<?php echo $form->textField($model,'Nombre'); ?>
+		<?php echo $form->error($model,'Nombre'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email'); ?>
-		<?php echo $form->error($model,'email'); ?>
+		<?php echo $form->labelEx($model,'Email'); ?>
+		<?php echo $form->textField($model,'Email'); ?>
+		<?php echo $form->error($model,'Email'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'subject'); ?>
+		<?php echo $form->labelEx($model,'Asunto'); ?>
+		<?php echo $form->textField($model,'Asunto',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->error($model,'Asunto'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'body'); ?>
+		<?php echo $form->labelEx($model,'Mensaje'); ?>
+		<?php echo $form->textArea($model,'Mensaje',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'Mensaje'); ?>
 	</div>
 
 	<?php if(CCaptcha::checkRequirements()): ?>

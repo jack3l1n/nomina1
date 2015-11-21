@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Empleado', 'url'=>array('index')),
-	array('label'=>'REGISTRO EMPLEADO NUEVO', 'url'=>array('create')),
-	array('label'=>'View Empleado', 'url'=>array('view', 'id'=>$model->cedula)),
-	array('label'=>'ADMINISTRACION DE EMPLEADO', 'url'=>array('admin')),
+	array('label'=>'Lista Empleado', 'url'=>array('index')),
+	array('label'=>'Crear Empleado ', 'url'=>array('create')),
+	array('label'=>'Ver Empleado', 'url'=>array('view', 'id'=>$model->cedula)),
+	array('label'=>'Administrar Empleado ', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Empleado <?php echo $model->cedula; ?></h1>
+<h1>Actualización Empleado <?php echo $model->cedula; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

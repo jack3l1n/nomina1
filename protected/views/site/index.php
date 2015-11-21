@@ -13,9 +13,8 @@ $this->pageTitle = Yii::app()->name;
                 <table title="Banner" border="0">
                     <tr>
                         <td style="text-align: center; color: black" >
-                            <!--<img src="http://www.nalelectricos.com.co/wp-content/uploads/2015/02/logo_nacional1.png" style="margin: 15px 0">-->
 
-                            <h2><p>Bienvenido a tu Noticiero Web.</p></h2>
+                            <h1><p>Bienvenido a tu Noticiero Web.</p></h1>
                         </td>
                     </tr>
                 </table>
@@ -37,10 +36,7 @@ $this->pageTitle = Yii::app()->name;
             <td>
                 <table title="Contenido" border="0" width="400px">
                     <tr>
-                        <!--<td></td>-->
-
-                    <img src="http://www.nalelectricos.com.co/wp-content/uploads/2015/02/logo_nacional2.png" style="margin: 15px 0">
-                    <h3><center>Certificados de Calidad</center></h3>
+                    <h2><center>Certificados de Calidad</center></h2>
                     Es grato para Nacional de Eléctricos informarles a todos nuestros clientes y proveedores sobre la renovación de la certificación del sistema de Gestión de Calidad, 
                     bajo la norma ISO 9001 versión 2008, obtenida en el mes de Marzo de 2014 y avalada por la compañía SGS, este logro busca brindar un mayor respaldo y confianza a las necesidades de nuestros clientes 
                     basado en la mejora continua de nuestros procesos.<br>

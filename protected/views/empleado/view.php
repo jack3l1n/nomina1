@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Empleado', 'url'=>array('index')),
-	array('label'=>' REGISTRO EMPLEADO NUEVO', 'url'=>array('create')),
-	array('label'=>'Update Empleado', 'url'=>array('update', 'id'=>$model->cedula)),
-	array('label'=>'Delete Empleado', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'ADMINISTRACION DE EMPLEADO', 'url'=>array('admin')),
+	array('label'=>'Lista Empleado', 'url'=>array('index')),
+	array('label'=>'Crear Empleado', 'url'=>array('create')),
+	array('label'=>'Actualización Empleado', 'url'=>array('update', 'id'=>$model->cedula)),
+	array('label'=>'Eliminar Empleado', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'Está seguro de querer eliminar este registro?')),
+	array('label'=>'Administrar Empleado', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Empleado #<?php echo $model->cedula; ?></h1>
+<h1>Ver Empleado #<?php echo $model->cedula; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -24,11 +24,13 @@ $this->menu=array(
 		'cedula',
 		'nombre',
 		'apellido',
+		'edad',
+		'fecha_nacimiento',
 		'direccion',
-		'email',
 		'telefono',
 		'celular',
-		'fecha_nacimiento',
+		'email',
+		'Fotoprincipal',
 		'cargo',
 		'sucursal',
 	),

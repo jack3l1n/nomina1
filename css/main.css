@@ -4,7 +4,7 @@ body
     padding: 0;
     color: #555;
     font: normal 10pt Arial,Helvetica,sans-serif;
-    background: #FDFD24;
+    background: #060606;
 }
 
 #page
@@ -239,4 +239,11 @@ div.search-form
     line-height: 15px;
     text-decoration: none;
     background-color: black;
+}
+
+.j1
+{
+    position:relative;
+    float:left;
+    width:50%;
 }
