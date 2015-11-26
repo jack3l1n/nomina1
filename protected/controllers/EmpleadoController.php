@@ -71,7 +71,7 @@ class EmpleadoController extends Controller
 		{
 			$model->attributes=$_POST['Empleado'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->cedula));
+				$this->redirect(array('view','id'=>$model->Cedula));
 		}
 
 		$this->render('create',array(
@@ -95,7 +95,7 @@ class EmpleadoController extends Controller
 		{
 			$model->attributes=$_POST['Empleado'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->cedula));
+				$this->redirect(array('view','id'=>$model->Cedula));
 		}
 
 		$this->render('update',array(

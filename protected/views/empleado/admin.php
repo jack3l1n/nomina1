@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista Empleado', 'url'=>array('index')),
-	array('label'=>'Crear Empleado', 'url'=>array('create')),
+	array('label'=>'List Empleado', 'url'=>array('index')),
+	array('label'=>'Create Empleado', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,11 +26,11 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Administrar Empleado</h1>
+<h1>Manage Empleados</h1>
 
 <p>
-Opcionalmente, puede introducir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) al comienzo de cada uno de sus valores de búsqueda para especificar cómo se debe hacer la comparación.
+You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
@@ -45,19 +45,19 @@ or <b>=</b>) al comienzo de cada uno de sus valores de búsqueda para especifica
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'cedula',
-		'nombre',
-		'apellido',
-		'edad',
-		'fecha_nacimiento',
-		'direccion',
+		'Cedula',
+		'Nombre',
+		'Apellido',
+		'Edad',
+		'Fecha_Nacimiento',
+		'Direccion',
 		/*
-		'telefono',
-		'celular',
-		'email',
-		'Imagen',
-		'cargo',
-		'sucursal',
+		'Telefono_Fijo',
+		'Celular',
+		'Email',
+		'Foto',
+		'id_Cargo',
+		'id_Sucursal',
 		*/
 		array(
 			'class'=>'CButtonColumn',

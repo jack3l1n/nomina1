@@ -4,18 +4,18 @@
 
 $this->breadcrumbs=array(
 	'Empleados'=>array('index'),
-	$model->cedula=>array('view','id'=>$model->cedula),
+	$model->Cedula=>array('view','id'=>$model->Cedula),
 	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'Lista Empleado', 'url'=>array('index')),
-	array('label'=>'Crear Empleado ', 'url'=>array('create')),
-	array('label'=>'Ver Empleado', 'url'=>array('view', 'id'=>$model->cedula)),
-	array('label'=>'Administrar Empleado ', 'url'=>array('admin')),
+	array('label'=>'List Empleado', 'url'=>array('index')),
+	array('label'=>'Create Empleado', 'url'=>array('create')),
+	array('label'=>'View Empleado', 'url'=>array('view', 'id'=>$model->Cedula)),
+	array('label'=>'Manage Empleado', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Actualización Empleado <?php echo $model->cedula; ?></h1>
+<h1>Update Empleado <?php echo $model->Cedula; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -4,21 +4,18 @@
  * This is the model class for table "empleado".
  *
  * The followings are the available columns in table 'empleado':
- * @property string $cedula
- * @property string $nombre
- * @property string $apellido
- * @property integer $edad
- * @property string $fecha_nacimiento
- * @property string $direccion
- * @property integer $telefono
- * @property integer $celular
- * @property string $email
- * @property string $Imagen
- * @property string $cargo
- * @property string $sucursal
- *
- * The followings are the available model relations:
- * @property InformacionEmpleado[] $informacionEmpleados
+ * @property integer $Cedula
+ * @property string $Nombre
+ * @property string $Apellido
+ * @property integer $Edad
+ * @property string $Fecha_Nacimiento
+ * @property string $Direccion
+ * @property integer $Telefono_Fijo
+ * @property integer $Celular
+ * @property string $Email
+ * @property string $Foto
+ * @property string $id_Cargo
+ * @property string $id_Sucursal
  */
 class Empleado extends CActiveRecord
 {
@@ -38,14 +35,14 @@ class Empleado extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cedula, edad, fotoprincipal', 'required'),
-			array('edad, telefono, celular', 'numerical', 'integerOnly'=>true),
-			array('cedula', 'length', 'max'=>50),
-			array('nombre, apellido, direccion, email, cargo, sucursal', 'length', 'max'=>45),
-			array('fecha_nacimiento', 'length', 'max'=>40),
+			array('Cedula, Nombre, Apellido, Edad, Fecha_Nacimiento, Direccion, Telefono_Fijo, Celular, Email, Foto, id_Cargo, id_Sucursal', 'required'),
+			array('Cedula, Edad, Telefono_Fijo, Celular', 'numerical', 'integerOnly'=>true),
+			array('Nombre, Apellido, Direccion, Email, id_Sucursal', 'length', 'max'=>30),
+			array('Fecha_Nacimiento', 'length', 'max'=>15),
+			array('id_Cargo', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cedula, nombre, apellido, edad, fecha_nacimiento, direccion, telefono, celular, email, fotoprincipal, cargo, sucursal', 'safe', 'on'=>'search'),
+			array('Cedula, Nombre, Apellido, Edad, Fecha_Nacimiento, Direccion, Telefono_Fijo, Celular, Email, Foto, id_Cargo, id_Sucursal', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,7 +54,6 @@ class Empleado extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'informacionEmpleados' => array(self::HAS_MANY, 'InformacionEmpleado', 'cedula_empleado'),
 		);
 	}
 
@@ -67,18 +63,18 @@ class Empleado extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cedula' => 'Cedula',
-			'nombre' => 'Nombre',
-			'apellido' => 'Apellido',
-			'edad' => 'Edad',
-			'fecha_nacimiento' => 'Fecha Nacimiento',
-			'direccion' => 'Direccion',
-			'telefono' => 'Telefono',
-			'celular' => 'Celular',
-			'email' => 'Email',
-			'fotoprincipal' => 'Fotoprincipal',
-			'cargo' => 'Cargo',
-			'sucursal' => 'Sucursal',
+			'Cedula' => 'Cedula',
+			'Nombre' => 'Nombre',
+			'Apellido' => 'Apellido',
+			'Edad' => 'Edad',
+			'Fecha_Nacimiento' => 'Fecha Nacimiento',
+			'Direccion' => 'Direccion',
+			'Telefono_Fijo' => 'Telefono Fijo',
+			'Celular' => 'Celular',
+			'Email' => 'Email',
+			'Foto' => 'Foto',
+			'id_Cargo' => 'Id Cargo',
+			'id_Sucursal' => 'Id Sucursal',
 		);
 	}
 
@@ -100,18 +96,18 @@ class Empleado extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('cedula',$this->cedula,true);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('apellido',$this->apellido,true);
-		$criteria->compare('edad',$this->edad);
-		$criteria->compare('fecha_nacimiento',$this->fecha_nacimiento,true);
-		$criteria->compare('direccion',$this->direccion,true);
-		$criteria->compare('telefono',$this->telefono);
-		$criteria->compare('celular',$this->celular);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('Fotoprincipal',$this->Fotoprincipal,true);
-		$criteria->compare('cargo',$this->cargo,true);
-		$criteria->compare('sucursal',$this->sucursal,true);
+		$criteria->compare('Cedula',$this->Cedula);
+		$criteria->compare('Nombre',$this->Nombre,true);
+		$criteria->compare('Apellido',$this->Apellido,true);
+		$criteria->compare('Edad',$this->Edad);
+		$criteria->compare('Fecha_Nacimiento',$this->Fecha_Nacimiento,true);
+		$criteria->compare('Direccion',$this->Direccion,true);
+		$criteria->compare('Telefono_Fijo',$this->Telefono_Fijo);
+		$criteria->compare('Celular',$this->Celular);
+		$criteria->compare('Email',$this->Email,true);
+		$criteria->compare('Foto',$this->Foto,true);
+		$criteria->compare('id_Cargo',$this->id_Cargo,true);
+		$criteria->compare('id_Sucursal',$this->id_Sucursal,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

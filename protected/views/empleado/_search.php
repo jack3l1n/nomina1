@@ -12,63 +12,63 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'cedula'); ?>
-		<?php echo $form->textField($model,'cedula',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'Cedula'); ?>
+		<?php echo $form->textField($model,'Cedula'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'Nombre'); ?>
+		<?php echo $form->textField($model,'Nombre',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'apellido'); ?>
-		<?php echo $form->textField($model,'apellido',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'Apellido'); ?>
+		<?php echo $form->textField($model,'Apellido',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'edad'); ?>
-		<?php echo $form->textField($model,'edad'); ?>
+		<?php echo $form->label($model,'Edad'); ?>
+		<?php echo $form->textField($model,'Edad'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'fecha_nacimiento'); ?>
-		<?php echo $form->textField($model,'fecha_nacimiento',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'Fecha_Nacimiento'); ?>
+		<?php echo $form->textField($model,'Fecha_Nacimiento',array('size'=>15,'maxlength'=>15)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'Direccion'); ?>
+		<?php echo $form->textField($model,'Direccion',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'telefono'); ?>
-		<?php echo $form->textField($model,'telefono'); ?>
+		<?php echo $form->label($model,'Telefono_Fijo'); ?>
+		<?php echo $form->textField($model,'Telefono_Fijo'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'celular'); ?>
-		<?php echo $form->textField($model,'celular'); ?>
+		<?php echo $form->label($model,'Celular'); ?>
+		<?php echo $form->textField($model,'Celular'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'Email'); ?>
+		<?php echo $form->textField($model,'Email',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Imagen'); ?>
-		<?php echo $form->textField($model,'Imagen'); ?>
+		<?php echo $form->label($model,'Foto'); ?>
+		<?php echo $form->textField($model,'Foto'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'cargo'); ?>
-		<?php echo $form->textField($model,'cargo',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'id_Cargo'); ?>
+		<?php echo $form->textField($model,'id_Cargo',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'sucursal'); ?>
-		<?php echo $form->textField($model,'sucursal',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->label($model,'id_Sucursal'); ?>
+		<?php echo $form->textField($model,'id_Sucursal',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div class="row buttons">
